@@ -1,0 +1,61 @@
+body{
+    font-family: "Roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 300;
+}
+
+th{
+    font-weight: 400;
+}
+
+td{
+    font-size: .9rem;
+}
+
+input{
+    font-size: .9rem !important;
+    padding: 1rem;
+}
+
+.text-small{
+    font-size: .9rem;
+}
+
+.mid-width{
+    width: 30%;
+    max-width: 580px;
+    margin: auto;
+}
+
+
+@media (max-width: 768px) {
+    .mid-width{
+        width: 60%;
+    }
+
+
+    .scroll-menu{
+        padding: 0 1rem;
+        margin: 0 1rem;
+        flex: 1;
+        overflow-x: scroll;
+    }
+}
+.scroll-menu::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width: 580px) {
+    .mid-width{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-responsive{
+        overflow-x: scroll;
+    }
+
+    table{
+        width: 1024px !important;
+    }
+}
