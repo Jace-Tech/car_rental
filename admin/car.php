@@ -197,7 +197,7 @@
                                                         <td><?= $vehicle_model; ?></td>
                                                         <td><?= $vehicle_number; ?></td>
                                                         <td><?= $seat_capacity; ?></td>
-                                                        <td><?= $rent; ?></td>
+                                                        <td><?= "$" . number_format($rent); ?></td>
                                                         <td><?= $available = ($availability) ? "Available" : "Booked" ; ?></td>
                                                         <th>
                                                             <div class="d-flex align-items-center">

@@ -15,7 +15,7 @@ function getUser($connect, string $id, string $type){
 }
 
 function getCars($connect){
-    $query = "SELECT * FROM `car`";
+    $query = "SELECT * FROM `car` ORDER BY `date` DESC";
     $result = $connect->prepare($query);
     $result->execute();
 
@@ -23,7 +23,7 @@ function getCars($connect){
 }
 
 function getCar($connect, $id){
-    $query = "SELECT * FROM `car` WHERE `vehicle_id` = ?";
+    $query = "SELECT * FROM `car` WHERE `vehicle_id` = ? ORDER BY `date` DESC" ;
     $result = $connect->prepare($query);
     $result->execute([$id]);
 
@@ -39,7 +39,7 @@ function getAllAdmin($connect){
 }
 
 function getAvailableCars($connect){
-    $query = "SELECT * FROM `car` WHERE `availability` = 1";
+    $query = "SELECT * FROM `car` WHERE `availability` = 1  ORDER BY `date` DESC";
     $result = $connect->prepare($query);
     $result->execute();
 
@@ -55,7 +55,7 @@ function getAllUsers($connect){
 }
 
 function getBookedCars($connect){
-    $query = "SELECT * FROM `booking`";
+    $query = "SELECT * FROM `booking` ORDER BY `date` DESC";
     $result = $connect->prepare($query);
     $result->execute();
 

@@ -35,7 +35,7 @@ if (isset($_POST['reg'])):
         ]);
 
         if($result){
-            header("Location: ../login.php?alert=r_s");
+            header("Location: ../index.php?alert=r_s");
         }
     }
     else{
@@ -68,11 +68,11 @@ if(isset($_POST['login'])):
             }
         }
         else{
-            header("location: ../login.php?alert=log_f");
+            header("location: ../index.php?alert=log_f");
         }
     }
     else{
-        header("location: ../login.php?alert=log_f");
+        header("location: ../index.php?alert=log_f");
     }
 
 endif;
